@@ -1,4 +1,4 @@
-    var FrugtArray = [];
+    var FrugtArray = []; //Array indeholder var fruit nedenfor, f.eks. via FrugtArray[0]
     var antalFrugt, prisIalt, apple, pear, banana, orange, kiwi, mango;
     apple = 0;
     pear = 0;
@@ -8,8 +8,8 @@
     mango = 0;
 
     function addFruit(fruit) {
-        var fruit;
-        if (fruit === 'parApple') {
+        var fruit; //var fruit omtaler hvilke enheder som findes i function addFruit(fruit)
+        if (fruit === 'parApple') { //'parApple' er parametre, som findes inde i HTML
             apple++;
             FrugtArray[0] = apple;
             document.getElementById("appleholder").innerHTML = "Antal æbler: " + (apple);
@@ -40,15 +40,15 @@
             document.getElementById("mangoholder").innerHTML = "Antal mangoer: " + (mango);
         }
 
-        var sum = FrugtArray.reduce(add, 0);
+        var sum = FrugtArray.reduce(add, 0); //Udregning af totale antal af frugt
 
-        function add(a, b) {
+        function add(a, b) { // Returnere værdien af a og b til udregningen
             return a + b;
         }
 
         document.getElementById("placeholderIalt").innerHTML = "Antal frugter i alt: " + (sum) + " stk.";
         
         document.getElementById("placeholderPris").innerHTML = "Pris i alt: " + (sum) * 4 + " kr.";
-        
+        //Outputtet på siden er vist ovenfor, ved udregning af pris ganges antallet af frugter med 4.
 
     }
