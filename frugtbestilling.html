@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="frugtbestilling.css">
+    <link href="frugtbestilling.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
+    <title>Frugtbestilling.dk</title>
+</head>
+
+<body>
+
+    <!-- frugt grid -->
+    <div id="grid">
+        <div id="header">
+            <header>
+                <h1>Frugtbestilling.dk</h1>
+            </header>
+        </div>
+        <p id="art"></p>
+        <div id="intro">
+            <p>Her på frugtbestilling.dk leverer vi altid lækker, frisk frugt af den højeste kvalitet. Vi bestræber os på, at leverer frugt der er lokalt produceret. Frugt fra udlandet er fair-trade produceret, så du sikre frugtavlerne en fair løn. Vores frugt er altid økologisk. Pris pr. stk. 4 kr.</p>
+        </div>
+        <div id="bestilling">
+            <p id="bestillingtekst"><strong>Din bestilling:</strong></p>
+            <p id="placeholderIalt"></p>
+            <p id="placeholderPris"></p>
+        </div>
+        <div id="apple">
+            <h2>Æbler</h2>
+            <button onclick="addFruit('parApple')">
+            <img id="aebler" src="billeder/aebler.jpg" width="150 px" alt="aeble">
+            </button>
+            <p>Vores lækre røde æbler er en klassiker. Her på siden bliver vores røde æbler udvalgt af forskellige sorter, afhængig af sæsonen. Vores æbler er selvfølgelig danske.</p>
+            <p id="appleholder"></p>
+        </div>
+        <div id="pear">
+            <h2>Pærer</h2>
+            <button onclick="addFruit('parPear')">
+            <img id="parer" src="billeder/paerer.jpg" width="150 px" alt="parer">
+            </button>
+            <p>Vi vælger vores pærersorter udfra hvor og hvornår de er bedst. Vi garanterer altid lækre pærer, der er smagfulde og sprøde.</p>
+            <p id="pearholder"></p>
+        </div>
+
+        <div id="orange">
+            <h2>Appelsiner</h2>
+            <button onclick="addFruit('parOrange')">
+            <img id="appelsin" src="billeder/appelsin.jpg" width="250 px" alt="appelsin">
+            </button>
+            <p>De smagfulde og saftige appelsiner er et sikkert hit hos mange. Vores appelsiner bliver produceret i Europa for at sikre de er så friske som muligt. De er 100% økologiske. </p>
+            <p id="orangeholder"></p>
+        </div>
+
+        <div id="banana">
+            <h2>Bananer</h2>
+            <button onclick="addFruit('parBanana')">
+            <img id="banan" src="billeder/bananer.jpg" width="250 px" alt="banan">
+            </button>
+            <p>Vores lækre bananer er et sikkert hit og et godt alternativ til søde sager. De er fair-trad dyrket og som alt andet frugt 100% økologisk</p>
+            <p id="bananaholder"></p>
+        </div>
+
+        <div id="mango">
+            <h2>Mango</h2>
+            <button onclick="addFruit('parMango')">
+            <img id="mango" src="billeder/mango.jpg" width="250 px" alt="mango">
+            </button>
+            <p>Den søde mango kan nydes både i salater og deserter. Eller bare nydes som den er. Den er naturligvis økologisk og fair trade dyrket.</p>
+            <p id="mangoholder"></p>
+        </div>
+
+        <div id="kiwi">
+            <h2>Kiwi</h2>
+            <button onclick="addFruit('parKiwi')">
+            <img id="kiwi" src="billeder/kiwi.jpg" width="250 px" alt="kiwi">
+            </button>
+            <p>Den søde kiwi kan nydes både i salater og deserter. Eller bare nydes som den er. Den er naturligvis økologisk og fair trade dyrket.</p>
+            <p id="kiwiholder"></p>
+        </div>
+    </div>
+    <!-- frugt grid -->
+</body>   
+</html>
+<script type="text/javascript" src="frugtbestilling.js"></script>

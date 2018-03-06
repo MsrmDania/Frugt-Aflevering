@@ -1,0 +1,51 @@
+body {
+
+    background-color: #d3f7ec;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Vidaloka;
+}
+
+p {
+    line-height: 1.75;
+}
+
+header {
+    background-color: #d3f7ec;
+    margin: 2px;
+    text-align: center;
+    text-shadow: 4px;
+}
+
+button {
+    background: #FFF;
+    outline: none;
+}
+
+#bestilling {
+    background-color: #FFF;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
+}
+
+#bestillingtekst {
+    font-family: vidaloka;
+}
+
+footer {
+    background-color: slategray;
+}
